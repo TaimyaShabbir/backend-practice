@@ -36,8 +36,7 @@ const getPaginatedPersons = async (req, res) => {
     const limit = parseInt(req.query.limit) || 20;
 
     const skip = (page - 1) * limit;
-
-    // Frontend se seniority lena
+    
     const seniority = req.query.seniority;
 
     const matchStage = {
